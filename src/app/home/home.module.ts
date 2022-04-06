@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { ComponentModule } from '../component/component.module';
+
 import { HeroeComponent } from '../heroes/heroe/heroe.component';
 import { ListadoComponent } from '../heroes/listado/listado.component';
 
@@ -16,7 +16,7 @@ import { ListadoComponent } from '../heroes/listado/listado.component';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    ComponentModule,
+    
     
   ],
   declarations:[HomePage, HeroeComponent, ListadoComponent]
