@@ -8,6 +8,8 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HeroeComponent } from '../heroes/heroe/heroe.component';
 import { ListadoComponent } from '../heroes/listado/listado.component';
+import { HeroesModule } from '../heroes/heroes.module';
+import { ContadorComponent } from '../contador/contador/contador.component';
 
 
 @NgModule({
@@ -16,9 +18,9 @@ import { ListadoComponent } from '../heroes/listado/listado.component';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    
+    HeroesModule
     
   ],
-  declarations:[HomePage, HeroeComponent, ListadoComponent]
+  declarations:[HomePage, ContadorComponent]
 })
 export class HomePageModule {}
