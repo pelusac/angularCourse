@@ -17,6 +17,8 @@ unpairedDevices: any;
 pairedDevices: any;
 gettingDevices: boolean;
 connected: boolean = false;
+titulo: string = "contador APP";
+numero: number = 10;
 
   constructor(private ble: BLE,
               private ngZone: NgZone,
@@ -127,7 +129,7 @@ connected: boolean = false;
               }
 
               imprime(){
-
+                
                 interface Personaje  {
                   nombre: string;
                   hp: Number;
@@ -168,7 +170,8 @@ connected: boolean = false;
                 // const resultado = multiplicar(10,0, 10);
                 // console.log(resultado);
               }
-            
-             }
 
+              
   
+
+            }
