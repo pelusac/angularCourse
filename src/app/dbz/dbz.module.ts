@@ -4,13 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 
 import { MainPageComponent } from './main-page/main-page.component';
+import { PersonajesComponent } from './personajes/personajes.component';
 
 
 
 
 @NgModule({
   declarations: [
-    MainPageComponent
+    MainPageComponent,
+    PersonajesComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { MainPageComponent } from './main-page/main-page.component';
   ],
   exports: [
     MainPageComponent
+    
   ]
 })
 export class DbzModule { }
