@@ -12,6 +12,7 @@ import { HeroesModule } from '../heroes/heroes.module';
 import { ContadorComponent } from '../contador/contador/contador.component';
 import { ContadorModule } from '../contador/contador/contador.module';
 import { DbzModule } from '../dbz/dbz.module';
+import { GiftAppModule } from '../gift-app/gift-app.module';
 
 
 
@@ -23,7 +24,8 @@ import { DbzModule } from '../dbz/dbz.module';
     HomePageRoutingModule,
     HeroesModule,
     ContadorModule,
-    DbzModule
+    DbzModule,
+    GiftAppModule
   ],
   declarations:[HomePage]
 })
