@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 import { Personaje } from '../interfaces/dbz.interface';
 
 @Component({
@@ -6,7 +7,8 @@ import { Personaje } from '../interfaces/dbz.interface';
   templateUrl: './personajes.component.html',
   styleUrls: ['./personajes.component.scss'],
 })
-export class PersonajesComponent  {
- @Input() personajes: Personaje[] = [];
-  
+export class PersonajesComponent{
+@Input() personajes: Personaje[] = [];
+ 
+
 }

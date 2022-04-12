@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Personaje } from '../interfaces/dbz.interface';
 
+import { Personaje } from '../interfaces/dbz.interface';
 
 
 @Component({
@@ -8,43 +8,33 @@ import { Personaje } from '../interfaces/dbz.interface';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
 })
-export class MainPageComponent implements OnInit {
+export class MainPageComponent  {
+
   personajes: Personaje[] = [
     {
-    nombre: "Goku",
-    poder: 15000
+      nombre: "Goku",
+      poder: 15000
     },
     {
-    nombre: "Vegeta",
-    poder: 7500
+      nombre: "vegeta",
+      poder: 10000
+    },
+    {
+      nombre: "Trunks",
+      poder: 11000
     }
   ];
 
-  nuevo: Personaje = {
+  nuevo:Personaje = {
     nombre: "",
     poder: 0
   }
 
 
-  constructor() { }
+ 
 
-  ngOnInit() {}
+ 
+ 
 
-  agregar(){
-    if ( this.nuevo.nombre.length === 0 ){
-      return;
-    }
-    else {
-      console.log(this.nuevo);
-      this.personajes.push(this.nuevo);
-      this.nuevo = {
-        nombre: "",
-        poder: 0
-      }
-    }
-    
-  }
-
-  
 
 }

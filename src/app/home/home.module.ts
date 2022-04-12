@@ -14,6 +14,7 @@ import { ContadorModule } from '../contador/contador/contador.module';
 import { DbzModule } from '../dbz/dbz.module';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -23,7 +24,6 @@ import { DbzModule } from '../dbz/dbz.module';
     HeroesModule,
     ContadorModule,
     DbzModule
-    
   ],
   declarations:[HomePage]
 })

@@ -1,7 +1,6 @@
 <h3>Personajes</h3>
-<hr>
-  <ul>
-    <li *ngFor="let item of personajes; let indexPersonaje = index;">
-      {{indexPersonaje + 1}}-{{ item.nombre}} - {{ item.poder | number}} 
-    <li>
-  </ul> 
+    <hr>
+    <ul *ngFor = "let item of personajes; let indice = index">
+      <li>{{ indice + 1 }}-{{ item.nombre  }}- {{ item.poder | number }}</li>
+      
+    </ul>
