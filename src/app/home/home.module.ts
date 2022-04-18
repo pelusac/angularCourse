@@ -13,6 +13,7 @@ import { ContadorComponent } from '../contador/contador/contador.component';
 import { ContadorModule } from '../contador/contador/contador.module';
 import { DbzModule } from '../dbz/dbz.module';
 import { GiftAppModule } from '../gift-app/gift-app.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -25,7 +26,8 @@ import { GiftAppModule } from '../gift-app/gift-app.module';
     HeroesModule,
     ContadorModule,
     DbzModule,
-    GiftAppModule
+    GiftAppModule,
+    SharedModule
   ],
   declarations:[HomePage]
 })
