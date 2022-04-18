@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 import { Personaje } from '../interfaces/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
@@ -7,6 +8,7 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './personajes.component.html',
   styleUrls: ['./personajes.component.scss'],
 })
+<<<<<<< HEAD
 export class PersonajesComponent  {
  //@Input() personajes: Personaje[] = [];
  get personajes () {
@@ -18,4 +20,15 @@ export class PersonajesComponent  {
     
 }
   
+=======
+export class PersonajesComponent{
+//@Input() personajes: Personaje[] = [];
+ 
+get personajes () {
+  return this.dbzService.personajes;
+}
+constructor (private dbzService: DbzService){
+
+}
+>>>>>>> 54037e362c1e371fc3f44442a9d73a6cdeefeaca
 }

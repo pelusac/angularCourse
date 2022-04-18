@@ -1,17 +1,37 @@
+<<<<<<< HEAD
 <h3>Agregar  {{ nuevo.nombre }}</h3>
 <hr>
 <form (ngSubmit)="agregar()">
   <input 
     placeholder="Nombre" 
     type="text"
+=======
+<h3>Agregar <small> {{ nuevo.nombre }}</small></h3>
+<hr>
+<form (ngSubmit)="agregar(  )">
+  <input 
+    type = "text" 
+    placeholder="Nombre"
+>>>>>>> 54037e362c1e371fc3f44442a9d73a6cdeefeaca
     name="nombre"
     [(ngModel)]="nuevo.nombre"
   />
   <input
+<<<<<<< HEAD
     placeholder="Poder" 
     type="number"
     name="poder"
     [(ngModel)]="nuevo.poder"
     />
   <button type="submit">Agregar</button>
+=======
+     type = "number" 
+     placeholder = "Poder"
+     name="poder"
+     [(ngModel)]="nuevo.poder"
+     />
+  <button type="submit">
+    Agregar
+  </button>
+>>>>>>> 54037e362c1e371fc3f44442a9d73a6cdeefeaca
 </form>
